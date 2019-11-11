@@ -8,63 +8,214 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
     />
+    <link rel="stylesheet" href="./src/styles.css" />
     <title>Chats | Kokoatalk</title>
   </head>
   <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">SKT 10:35</span>
+    <div class="screen">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">SKT 10:35</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fab fa-bluetooth-b"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">86%</span>
+          <i class="fas fa-battery-three-quarters"></i>
+        </div>
       </div>
-      <div class="status-bar__column"></div>
-      <i class="fas fa-clock"></i>
-      <i class="fab fa-bluetooth-b"></i>
-      <i class="fas fa-volume-mute"></i>
-      <i class="fas fa-wifi"></i>
-      <span class="status-bar__battery-level">86%</span>
-      <i class="fas fa-battery-three-quarters"></i>
-    </div>
-    <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">Chats</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-comment"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-music"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
-      </div>
-    </header>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="./friends.html" class="nav_list-link">
-            <i class="far fa-user"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="./index.html" class="nav_list-link">
-            <i class="far fa-comment"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="./find.html" class="nav_list-link">
+      <header class="header">
+        <div class="header__header-column">
+          <h1 class="header__title">Chats</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
             <i class="fas fa-search"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="./more.html" class="nav_list-link">
-            <i class="fas fa-ellipsis-h"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-comment"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-music"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-cog"></i>
+          </span>
+        </div>
+      </header>
+      <main class="chats">
+        <ul class="chats__list">
+          <li class="chats__chat chat">
+            <div class="chats__chat friend">
+              <div class="friend__column">
+                <img class="avatar" src="" alt="avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">SH Kim</span>
+                  <span class="friend__bottom-text">사진을 보냈습니다.</span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">8:19 AM</span>
+              </div>
+            </div>
+          </li>
+          <li class="chats__chat chat">
+            <div class="chats__chat friend">
+              <div class="friend__column">
+                <img class="avatar" src="" alt="avatar" />
+                <div class="friend__content">
+                  <div class="chat-room-name__column">
+                    <span class="friend__name">내사랑</span>
+                  </div>
+                  <div class="chat-room-name__column">
+                    <i class="fas fa-thumbtack"></i>
+                  </div>
+                  <span class="friend__bottom-text">오앙</span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">2:03 PM</span>
+              </div>
+            </div>
+          </li>
+          <li class="chats__chat chat">
+            <div class="chats__chat friend">
+              <div class="friend__column">
+                <img class="avatar" src="" alt="avatar" />
+                <div class="friend__content">
+                  <div class="chat-room-name__column">
+                    <span class="friend__name">박창수,조영환,고정근,조...</span>
+                  </div>
+                  <div class="chat-room-name__column">
+                    <span>
+                      7
+                      <i class="fas fa-thumbtack"></i>
+                      <i class="fas fa-bell-slash"></i>
+                    </span>
+                  </div>
+                  <span class="friend__bottom-text">생축~</span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">8:19 AM</span>
+              </div>
+            </div>
+          </li>
+          <li class="chats__chat chat">
+            <div class="chats__chat friend">
+              <div class="friend__column">
+                <img class="avatar" src="" alt="avatar" />
+                <div class="friend__content">
+                  <div class="chat-room-name__column">
+                    <span class="friend__name">이세열, 김용석, 이기남,...</span>
+                  </div>
+                  <div class="chat-room-name__column">
+                    <span>
+                      10
+                      <i class="fas fa-thumbtack"></i>
+                      <i class="fas fa-bell-slash"></i>
+                    </span>
+                  </div>
+                  <span class="friend__bottom-text">중국의 승리인가</span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">Yesterday</span>
+              </div>
+            </div>
+          </li>
+          <li class="chats__chat chat">
+            <div class="chats__chat friend">
+              <div class="friend__column">
+                <img class="avatar" src="" alt="avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">카카오페이</span>
+                  <span class="friend__bottom-text"
+                    >정기결제가 완료되었습니다.</span
+                  >
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">November 8</span>
+              </div>
+            </div>
+          </li>
+          <li class="chats__chat chat">
+            <div class="chats__chat friend">
+              <div class="friend__column">
+                <img class="avatar" src="" alt="avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">카카오콘</span>
+                  <span class="friend__bottom-text"
+                    >10.00 CON을 사용했습니다.</span
+                  >
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">November 5</span>
+              </div>
+            </div>
+          </li>
+          <li class="chats__chat chat">
+            <div class="chats__chat friend">
+              <div class="friend__column">
+                <img class="avatar" src="" alt="avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">CJ대한통운</span>
+                  <span class="friend__bottom-text">CJ대한통운&언니네상회</span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">November 3</span>
+              </div>
+            </div>
+          </li>
+          <li class="chats__chat chat">
+            <div class="chats__chat friend">
+              <div class="friend__column">
+                <img class="avatar" src="" alt="avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">크린토피아</span>
+                  <span class="friend__bottom-text"
+                    >크린토피아는 월~토 영업하며 일요일에는 영업하지 않습니다.
+                    ...</span
+                  >
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">November 1</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </main>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="./friends.html" class="nav_list-link">
+              <i class="far fa-user"></i>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="./index.html" class="nav_list-link">
+              <i class="far fa-comment"></i>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="./find.html" class="nav_list-link">
+              <i class="fas fa-search"></i>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="./more.html" class="nav_list-link">
+              <i class="fas fa-ellipsis-h"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </body>
 </html>
