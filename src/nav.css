@@ -1,0 +1,33 @@
+.nav {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #f2fcfa;
+  padding: 5px 0px;
+  z-index: 1;
+  box-shadow: 0px -1px 3px rgba(200, 200, 200, 0.5);
+}
+
+.nav__list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav i {
+  font-size: 20px;
+}
+
+.body__chats .nav i.fa-comment,
+.body__index .nav i.fa-comment,
+.body__friends .nav i.fa-user,
+.body__news .nav i.fa-search,
+.body__more .nav i.fa-ellipsis-h {
+  animation: 1s rainbow-and-spin linear infinite;
+}

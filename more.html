@@ -8,169 +8,181 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
     />
+    <link rel="stylesheet" href="./src/styles.css" />
     <title>More | Kokoatalk</title>
   </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">SKT 10:35</span>
+  <body class="body__more">
+    <div class="screen">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">SKT 10:35</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fab fa-bluetooth-b"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">86%</span>
+          <i class="fas fa-battery-three-quarters"></i>
+        </div>
       </div>
-      <div class="status-bar__column"></div>
-      <i class="fas fa-clock"></i>
-      <i class="fab fa-bluetooth-b"></i>
-      <i class="fas fa-volume-mute"></i>
-      <i class="fas fa-wifi"></i>
-      <span class="status-bar__battery-level">86%</span>
-      <i class="fas fa-battery-three-quarters"></i>
-    </div>
-    <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">More</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-qrcode"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-music"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
-      </div>
-    </header>
-    <main class="more">
-      <section class="me">
-        <div class="friend__column">
-          <img class="friend__avatar" src="" alt="avatar me" />
-          <div class="friend__content">
-            <span>SH Kim</span>
-            <span class="friend__status">I eat Kimchi everyday.</span>
-          </div>
+      <header class="header">
+        <div class="header__header-column">
+          <h1 class="header__title">More</h1>
         </div>
-        <div class="friend__column">
-          <div class="more__me__column">
-            <span class="more__me">
-              MY
-            </span>
-          </div>
-          <div class="more__me__column">
-            <span class="more__me">
-              <i class="fab fa-bitcoin"></i>
-              27
-            </span>
-          </div>
-        </div>
-      </section>
-      <section class="kakao-pay">
-        <div class="kakao-pay__column">
-          <span class="black bold">
-            <i class="fas fa-comment"></i>
-            pay
-          </span>
-          <span class="grey">
-            > 186,036
-          </span>
-          <button class="kakao-pay-add">Add</button>
-        </div>
-        <div class="kakao-pay__column">
-          <span class="black">Send</span> <span class="grey">|</span
-          ><span class="black"> Pay</span>
-        </div>
-      </section>
-      <section class="more__grid">
-        <div class="more__items">
-          <i class="far fa-smile-wink"></i>
-          <span class="more__items__item">Emoticons</span>
-        </div>
-        <div class="more__items">
-          <i class="fas fa-store"></i>
-          <span class="more__items__item">Shopping</span>
-        </div>
-        <div class="more__items">
-          <i class="fas fa-gift"></i>
-          <span class="more__items__item">Gifts</span>
-        </div>
-        <div class="more__items">
-          <i class="fas fa-search-dollar"></i>
-          <span class="more__items__item">Makers</span>
-        </div>
-        <div class="more__items">
-          <i class="fas fa-users"></i>
-          <span class="more__items__item">Friends</span>
-        </div>
-        <div class="more__items">
-          <i class="fas fa-user-tie"></i>
-          <span class="more__items__item">Style</span>
-        </div>
-        <div class="more__items">
-          <i class="fas fa-utensils"></i>
-          <span class="more__items__item">Order</span>
-        </div>
-        <div class="more__items">
-          <i class="fas fa-ticket-alt"></i>
-          <span class="more__items__item">Melon Ticket</span>
-        </div>
-        <div class="more__items">
-          <i class="fas fa-gamepad"></i>
-          <span class="more__items__item">Games</span>
-        </div>
-        <div class="more__items">
-          <i class="far fa-sticky-note"></i>
-          <span class="more__items__item">Page</span>
-        </div>
-        <div class="more__items">
-          <i class="fas fa-music"></i>
-          <span class="more__items__item">Music</span>
-        </div>
-        <div class="more__items">
-          <i class="fas fa-th-large"></i>
-          <span class="more__items__item">Services</span>
-        </div>
-      </section>
-      <section class="others">
-        <div class="others__column">
-          <span class="black">
-            <i class="far fa-envelope"></i>
-            Mail
-          </span>
-          <span class="grey">Unread 0</span>
-        </div>
-        <div class="others__column">
-          <span class="black">
-            <i class="far fa-calendar-check"></i>
-            Calendar
-          </span>
-          <span class="grey">New Event</span>
-        </div>
-      </section>
-    </main>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="./friends.html" class="nav_list-link">
-            <i class="far fa-user"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="./index.html" class="nav_list-link">
-            <i class="far fa-comment"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="./news.html" class="nav_list-link">
+        <div class="header__header-column">
+          <span class="header__icon">
             <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-qrcode"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-music"></i>
+          </span>
+          <a href="./settings.html">
+            <span class="header__icon">
+              <i class="fas fa-cog"></i>
+            </span>
           </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="./more.html" class="nav_list-link">
-            <i class="fas fa-ellipsis-h"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
+        </div>
+      </header>
+      <main class="more">
+        <section class="me">
+          <div class="friend">
+            <div class="friend__column">
+              <img
+                class="avatar avatar-me"
+                src="./assets/avatar-me.jpeg"
+                alt="avatar me"
+              />
+              <div class="friend__content">
+                <span>SH Kim</span>
+                <span class="friend__status">sh.kim@godmail.com</span>
+              </div>
+            </div>
+            <div class="friend__column">
+              <div class="more__me__column">
+                <span class="more__me">
+                  MY
+                </span>
+              </div>
+              <div class="more__me__column">
+                <span class="more__me">
+                  <i class="fab fa-bitcoin"></i>
+                  27
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="kakao-pay">
+          <div class="kakao-pay__column">
+            <span class="black bold">
+              <i class="fas fa-comment"></i>
+              pay
+            </span>
+            <span class="grey">
+              > 186,036
+            </span>
+            <button class="kakao-pay-add">Add</button>
+          </div>
+          <div class="kakao-pay__column">
+            <span class="black">Send</span> <span class="grey">|</span
+            ><span class="black"> Pay</span>
+          </div>
+        </section>
+        <section class="more__grid">
+          <div class="more__items">
+            <i class="far fa-smile-wink"></i>
+            <span class="more__items__item">Emoticons</span>
+          </div>
+          <div class="more__items">
+            <i class="fas fa-store"></i>
+            <span class="more__items__item">Shopping</span>
+          </div>
+          <div class="more__items">
+            <i class="fas fa-gift"></i>
+            <span class="more__items__item">Gifts</span>
+          </div>
+          <div class="more__items">
+            <i class="fas fa-search-dollar"></i>
+            <span class="more__items__item">Makers</span>
+          </div>
+          <div class="more__items">
+            <i class="fas fa-users"></i>
+            <span class="more__items__item">Friends</span>
+          </div>
+          <div class="more__items">
+            <i class="fas fa-user-tie"></i>
+            <span class="more__items__item">Style</span>
+          </div>
+          <div class="more__items">
+            <i class="fas fa-utensils"></i>
+            <span class="more__items__item">Order</span>
+          </div>
+          <div class="more__items">
+            <i class="fas fa-ticket-alt"></i>
+            <span class="more__items__item">Melon Ticket</span>
+          </div>
+          <div class="more__items">
+            <i class="fas fa-gamepad"></i>
+            <span class="more__items__item">Games</span>
+          </div>
+          <div class="more__items">
+            <i class="far fa-sticky-note"></i>
+            <span class="more__items__item">Page</span>
+          </div>
+          <div class="more__items">
+            <i class="fas fa-music"></i>
+            <span class="more__items__item">Music</span>
+          </div>
+          <div class="more__items">
+            <i class="fas fa-th-large"></i>
+            <span class="more__items__item">Services</span>
+          </div>
+        </section>
+        <section class="others">
+          <div class="others__column">
+            <span class="black">
+              <i class="far fa-envelope"></i>
+              Mail
+            </span>
+            <span class="grey">Unread 0</span>
+          </div>
+          <div class="others__column">
+            <span class="black">
+              <i class="far fa-calendar-check"></i>
+              Calendar
+            </span>
+            <span class="grey">New Event</span>
+          </div>
+        </section>
+      </main>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="./friends.html" class="nav_list-link">
+              <i class="far fa-user"></i>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="./chats.html" class="nav_list-link">
+              <i class="far fa-comment"></i>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="./news.html" class="nav_list-link">
+              <i class="fas fa-search"></i>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="./more.html" class="nav_list-link">
+              <i class="fas fa-ellipsis-h"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </body>
 </html>

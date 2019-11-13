@@ -1,0 +1,106 @@
+.start {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fade-out linear;
+  animation-delay: 5s;
+  animation-iteration-count: 1;
+  animation-duration: 20000s;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.start .right {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 20%;
+  background-color: rgba(179, 231, 255, 0);
+  z-index: 4;
+}
+
+.start .right .bar {
+  width: 10px;
+  height: 40px;
+  margin: 5px;
+  background-color: white;
+  animation: scale-bar 2s linear infinite;
+}
+
+.start .right .bar:nth-child(1) {
+  animation-delay: -0.3s;
+}
+.start .right .bar:nth-child(2) {
+  animation-delay: -0.15s;
+}
+.start .right .bar:nth-child(3) {
+  animation-delay: 0s;
+}
+.start .right .bar:nth-child(4) {
+  animation-delay: 0.15s;
+}
+.start .right .bar:nth-child(5) {
+  animation-delay: 0.3s;
+}
+
+@keyframes scale-bar {
+  0% {
+    transform: none;
+  }
+  10% {
+    transform: scaleY(2);
+  }
+  20% {
+    transform: none;
+  }
+}
+
+.start img {
+  object-fit: cover;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  0.01% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  0.011% {
+    transform: scale(0);
+  }
+}
+
+.header__back-btn {
+  animation: 1s rainbow linear infinite;
+}
+
+@keyframes rainbow {
+  from {
+    color: red;
+  }
+  15% {
+    color: orange;
+  }
+  30% {
+    color: yellow;
+  }
+  45% {
+    color: green;
+  }
+  60% {
+    color: skyblue;
+  }
+  75% {
+    color: blue;
+  }
+  90% {
+    color: blueviolet;
+  }
+}

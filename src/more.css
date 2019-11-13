@@ -1,0 +1,127 @@
+.friend .more__me__column {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid rgba(200, 200, 200, 0.3);
+  padding: 10px;
+  font-size: 14px;
+  margin-left: 5px;
+  color: #222222;
+}
+
+.friend .more__me__column i {
+  font-size: 16px;
+  color: #fae100;
+}
+
+.kakao-pay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(200, 200, 200, 0.3);
+  border-radius: 5px;
+}
+
+.more span.black {
+  color: #222222;
+}
+
+.more span.grey {
+  color: #888888;
+}
+
+.kakao-pay .kakao-pay-add {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 2px 4px;
+  border: none;
+  border-radius: 4px;
+}
+
+.more__grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 60px 60px 60px 60px;
+  grid-template-rows: 60px 60px 60px;
+  grid-gap: 10px;
+  padding: 5px;
+  margin: 20px 0px;
+}
+
+.more__grid .more__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(250, 225, 0, 0.8);
+  border-radius: 20px;
+}
+
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
+.more__grid .more__items:hover {
+  animation: 1s spin ease-in infinite;
+}
+
+.more__items i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.more__items .more__items__item {
+  font-size: 10px;
+  text-align: center;
+}
+
+.others {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-top: 1px solid rgba(200, 200, 200, 0.3);
+  border-bottom: 1px solid rgba(200, 200, 200, 0.3);
+}
+
+.body__more i.fa-cog {
+  animation: 1s rainbow-and-spin linear infinite;
+}
+
+@keyframes rainbow-and-spin {
+  from {
+    transform: none;
+    color: red;
+  }
+  15% {
+    color: orange;
+  }
+  30% {
+    color: yellow;
+  }
+  45% {
+    color: green;
+  }
+  60% {
+    color: skyblue;
+  }
+  75% {
+    color: blue;
+  }
+  90% {
+    color: blueviolet;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}

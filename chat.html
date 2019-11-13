@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Chat | Kokoatalk</title>
+  </head>
+  <body class="body__chat">
+    <div class="screen">
+      <div class="header-wrapper">
+        <div class="status-bar">
+          <div class="status-bar__column">
+            <span class="status-bar__clock">SKT 10:35</span>
+          </div>
+          <div class="status-bar__column">
+            <i class="fas fa-clock"></i>
+            <i class="fab fa-bluetooth-b"></i>
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-wifi"></i>
+            <span class="status-bar__battery-level">86%</span>
+            <i class="fas fa-battery-three-quarters"></i>
+          </div>
+        </div>
+        <header class="header">
+          <div class="header__header-column">
+            <a href="./chats.html" class="header__back-btn">
+              <i class="fas fa-arrow-left"></i>
+            </a>
+            <h1 class="header__title">Best Friend</h1>
+          </div>
+          <div class="header__header-column">
+            <span class="header__icon">
+              <i class="fas fa-search"></i>
+            </span>
+            <span class="header__icon">
+              <i class="fas fa-bars"></i>
+            </span>
+          </div>
+        </header>
+      </div>
+      <main class="chat-screen">
+        <ul class="chat__messages">
+          <div class="chat__timestamp__box">
+            <span class="chat__timestamp">
+              Wednesday, November 13, 2019
+            </span>
+          </div>
+          <li class="incoming-message message">
+            <img
+              src="https://ppss.kr/wp-content/uploads/2015/07/16.jpg"
+              class="m-avatar message__avatar"
+            />
+            <div class="message__content">
+              <span class="message__author">Best Friend</span>
+              <span class="message__bubble">
+                Can you help me?
+              </span>
+            </div>
+          </li>
+          <li class="sent-message message">
+            <div class="message__content">
+              <span class="message__bubble">
+                Sure, what's up?
+              </span>
+            </div>
+          </li>
+          <li class="incoming-message message">
+            <img
+              src="https://ppss.kr/wp-content/uploads/2015/07/16.jpg"
+              class="m-avatar message__avatar"
+            />
+            <div class="message__content">
+              <span class="message__author">Best Friend</span>
+              <span class="message__bubble">
+                I'm trying to get this guy to like me...
+              </span>
+            </div>
+          </li>
+          <li class="sent-message message">
+            <div class="message__content">
+              <span class="message__bubble">
+                Who is he?
+              </span>
+            </div>
+          </li>
+
+          <li class="incoming-message message">
+            <img
+              src="https://ppss.kr/wp-content/uploads/2015/07/16.jpg"
+              class="m-avatar message__avatar"
+            />
+            <div class="message__content">
+              <span class="message__author">Best Friend</span>
+              <span class="message__bubble">
+                I can't tell you.
+              </span>
+            </div>
+          </li>
+          <li class="sent-message message">
+            <div class="message__content">
+              <span class="message__bubble">
+                Well, you could just tell him you like him.
+              </span>
+            </div>
+          </li>
+          <li class="incoming-message message">
+            <img
+              src="https://ppss.kr/wp-content/uploads/2015/07/16.jpg"
+              class="m-avatar message__avatar"
+            />
+            <div class="message__content">
+              <span class="message__author">Best Friend</span>
+              <span class="message__bubble">
+                How?
+              </span>
+            </div>
+          </li>
+          <li class="sent-message message">
+            <div class="message__content">
+              <span class="message__bubble">
+                Just say it.
+              </span>
+            </div>
+          </li>
+          <li class="incoming-message message">
+            <img
+              src="https://ppss.kr/wp-content/uploads/2015/07/16.jpg"
+              class="m-avatar message__avatar"
+            />
+            <div class="message__content">
+              <span class="message__author">Best Friend</span>
+              <span class="message__bubble">
+                I like you.
+              </span>
+            </div>
+          </li>
+          <li class="sent-message message">
+            <div class="message__content">
+              <span class="message__bubble">
+                Yeah, like that. 😄
+              </span>
+            </div>
+          </li>
+          <li class="incoming-message message">
+            <img
+              src="https://ppss.kr/wp-content/uploads/2015/07/16.jpg"
+              class="m-avatar message__avatar"
+            />
+            <div class="message__content">
+              <span class="message__author">Best Friend</span>
+              <span class="message__bubble">
+                You're an idiot. 😡
+              </span>
+            </div>
+          </li>
+        </ul>
+      </main>
+      <div class="chat__write--container">
+        <input
+          type="text"
+          class="chat__write"
+          placeholder="Send message"
+          class="chat__write-input"
+        />
+
+        <div class="chat__icon-left chat__icon">
+          <i class="far fa-plus-square"></i>
+        </div>
+
+        <div class="chat__icon-right chat__icon">
+          <span class="chat__write-icon">
+            <i class="far fa-smile-wink"></i>
+          </span>
+          <span class="chat__write-icon">
+            <i class="fas fa-microphone"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

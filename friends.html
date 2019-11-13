@@ -8,187 +8,257 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
     />
+    <link rel="stylesheet" href="./src/styles.css" />
     <title>Friends | Kokoatalk</title>
   </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">SKT 10:35</span>
+  <body class="body__friends">
+    <div class="screen">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">SKT 10:35</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fab fa-bluetooth-b"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">86%</span>
+          <i class="fas fa-battery-three-quarters"></i>
+        </div>
       </div>
-      <div class="status-bar__column"></div>
-      <i class="fas fa-clock"></i>
-      <i class="fab fa-bluetooth-b"></i>
-      <i class="fas fa-volume-mute"></i>
-      <i class="fas fa-wifi"></i>
-      <span class="status-bar__battery-level">86%</span>
-      <i class="fas fa-battery-three-quarters"></i>
-    </div>
-    <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">Friends</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-user-plus"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-music"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
-      </div>
-    </header>
-    <main class="friends">
-      <section class="me">
-        <div class="friend__column">
-          <img class="friend__avatar" src="" alt="avatar me" />
-          <div class="friend__content">
-            <span>SH Kim</span>
-            <span class="friend__status">I eat Kimchi everyday.</span>
+      <header class="header">
+        <div class="header__header-column">
+          <h1 class="header__title">Friends</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-user-plus"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-music"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-cog"></i>
+          </span>
+        </div>
+      </header>
+      <main class="friends">
+        <section class="me">
+          <div class="chats__chat friend">
+            <div class="friend__column">
+              <img
+                class="avatar avatar-me"
+                src="./assets/avatar-me.jpeg"
+                alt="avatar"
+              />
+              <div class="friend__content">
+                <div class="friend__content__row">
+                  <span class="friend__name">SH Kim</span>
+                </div>
+                <span class="friend__bottom-text">I eat kimchi everyday.</span>
+              </div>
+            </div>
+            <div class="friend__column"></div>
           </div>
-        </div>
-        <div class="friend__column"></div>
-      </section>
-      <section class="friends__birthday">
-        <div class="title__column">
-          <h5 class="birthday__title">Friends with Birthdays</h5>
-        </div>
-        <div class="title__column">
-          <i class="fas fa-chevron-up"></i>
-        </div>
-        <ul class="friends__list">
+        </section>
+        <section class="friends__birthday">
+          <div class="friends__title">
+            <h5 class="birthday__title">Friends with Birthdays</h5>
+            <i class="fas fa-chevron-up"></i>
+          </div>
+          <ul class="friends__list">
+            <li class="freinds__friend friend">
+              <div class="friend__column">
+                <img
+                  class="avatar"
+                  src="https://www.billboard.com/files/styles/article_main_image/public/media/Black-Eyed-Peas-BACK-2-HIPHOP-vid-2018-billboard-1548.jpg"
+                  alt="avatar"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    이재율
+                    <i class="fas fa-birthday-cake"></i>
+                  </span>
+                  <span class="friend__status">Hola</span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <div class="friend__side-menu">Gift Shop</div>
+              </div>
+            </li>
+            <li class="friends__friend friend">
+              <div class="friend__column">
+                <div class="avatar birthday">
+                  <i class="fas fa-birthday-cake"></i>
+                </div>
+                <div class="friend__content">
+                  <span class="friend__name">
+                    View more birthdays
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span>5</span>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="friends__favorites">
+          <div class="friends__title">
+            <h5 class="birthday__title">Favorites</h5>
+            <i class="fas fa-chevron-up"></i>
+          </div>
+          <ul class="friends__list">
+            <li class="freinds__friend friend">
+              <div class="friend__column">
+                <img
+                  class="avatar"
+                  src="https://pbs.twimg.com/profile_images/1088993148548767744/iLEdazdz_reasonably_small.jpg"
+                  alt="avatar"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    내사랑❤️
+                  </span>
+                  <span class="friend__status">용감한슈슈❤️</span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <div class="friend__side-menu">
+                  그대네요 - 성시경,아이유
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="friends">
+          <div class="friends__title">
+            <h5 class="birthday__title">Friends 364</h5>
+            <i class="fas fa-chevron-up"></i>
+          </div>
+
           <li class="freinds__friend friend">
             <div class="friend__column">
-              <img class="avatar" src="" alt="avatar" />
+              <img
+                class="avatar"
+                src="https://img.freepik.com/free-photo/beautiful-seashore-with-sun-reflected_1203-1686.jpg?size=626&ext=jpg"
+                alt="avatar"
+              />
               <div class="friend__content">
-                <span class="friend__name">
-                  이재율
-                  <i class="fas fa-birthday-cake"></i>
-                </span>
-                <span class="friend__status">Hola</span>
+                <span class="friend__name">ㄱ초이</span>
+                <span class="friend__status"></span>
+              </div>
+            </div>
+            <div class="friend__column"></div>
+          </li>
+          <li class="freinds__friend friend">
+            <div class="friend__column">
+              <img
+                class="avatar"
+                src="https://cdn.britannica.com/67/19367-050-885866B4/Valley-Taurus-Mountains-Turkey.jpg"
+                alt="avatar"
+              />
+              <div class="friend__content">
+                <span class="friend__name">강경구형님</span>
+                <span class="friend__status"></span>
+              </div>
+            </div>
+            <div class="friend__column"></div>
+          </li>
+          <li class="freinds__friend friend">
+            <div class="friend__column">
+              <img
+                class="avatar"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQWBt3xKx6WX8f6g9pJmHaB5XsbsPyoOsmpbXLLOcSHGuYGkfFj"
+                alt="avatar"
+              />
+              <div class="friend__content">
+                <span class="friend__name">강문복</span>
+                <span class="friend__status">강문복</span>
+              </div>
+            </div>
+            <div class="friend__column"></div>
+          </li>
+          <li class="freinds__friend friend">
+            <div class="friend__column">
+              <img
+                class="avatar"
+                src="http://medicine.korea.ac.kr/html_portlet_repositories/5727.jpg"
+                alt="avatar"
+              />
+              <div class="friend__content">
+                <span class="friend__name">강은주</span>
+                <span class="friend__status">Be Awesome</span>
               </div>
             </div>
             <div class="friend__column">
-              <button class="friend__gift-shop">Gift Shop</button>
+              <div class="friend__side-menu">
+                Love Fiction - 울랄라세션
+                <i class="fas fa-play"></i>
+              </div>
             </div>
           </li>
-          <li class="friends__friend friend">
+          <li class="freinds__friend friend">
             <div class="friend__column">
-              <span>
-                View more birthdays
-              </span>
+              <img
+                class="avatar"
+                src="http://economychosun.com/query/upload/241/241_42.jpg"
+                alt="avatar"
+              />
+              <div class="friend__content">
+                <span class="friend__name">강준호형님</span>
+                <span class="friend__status"></span>
+              </div>
             </div>
+            <div class="friend__column"></div>
+          </li>
+          <li class="freinds__friend friend">
             <div class="friend__column">
-              <span>5</span>
-              <i class="fas fa-chevron-right"></i>
+              <img
+                class="avatar"
+                src="https://yt3.ggpht.com/a/AGF-l78Ianj7UIdyJKDinw8hpz0q_FZP43anTgD2Dg=s288-c-k-c0xffffffff-no-rj-mo"
+                alt="avatar"
+              />
+              <div class="friend__content">
+                <span class="friend__name">강환성</span>
+                <span class="friend__status">
+                  작은 습관 하나 하나가 모여서 큰 목적을 만든다@
+                </span>
+              </div>
             </div>
+            <div class="friend__column"></div>
+          </li>
+        </section>
+      </main>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="./friends.html" class="nav_list-link">
+              <i class="far fa-user"></i>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="./chats.html" class="nav_list-link">
+              <i class="far fa-comment"></i>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="./news.html" class="nav_list-link">
+              <i class="fas fa-search"></i>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="./more.html" class="nav_list-link">
+              <i class="fas fa-ellipsis-h"></i>
+            </a>
           </li>
         </ul>
-      </section>
-      <section class="favorites">
-        <div class="title__column">
-          <h5 class="birthday__title">Friends 364</h5>
-        </div>
-        <div class="title__column">
-          <i class="fas fa-chevron-up"></i>
-        </div>
-
-        <li class="freinds__friend friend">
-          <div class="friend__column">
-            <img class="avatar" src="" alt="avatar" />
-            <div class="friend__content">
-              <span class="friend__name">ㄱ초이</span>
-              <span class="friend__status"></span>
-            </div>
-          </div>
-          <div class="friend__column"></div>
-        </li>
-        <li class="freinds__friend friend">
-          <div class="friend__column">
-            <img class="avatar" src="" alt="avatar" />
-            <div class="friend__content">
-              <span class="friend__name">강경구형님</span>
-              <span class="friend__status"></span>
-            </div>
-          </div>
-          <div class="friend__column"></div>
-        </li>
-        <li class="freinds__friend friend">
-          <div class="friend__column">
-            <img class="avatar" src="" alt="avatar" />
-            <div class="friend__content">
-              <span class="friend__name">강문복</span>
-              <span class="friend__status">강문복</span>
-            </div>
-          </div>
-          <div class="friend__column"></div>
-        </li>
-        <li class="freinds__friend friend">
-          <div class="friend__column">
-            <img class="avatar" src="" alt="avatar" />
-            <div class="friend__content">
-              <span class="friend__name">강은주</span>
-              <span class="friend__status">Be Awesome</span>
-            </div>
-          </div>
-          <div class="friend__column">
-            <button class="friend__now-listening">
-              Love Fiction - 울랄라세션
-              <i class="fas fa-play"></i>
-            </button>
-          </div>
-        </li>
-        <li class="freinds__friend friend">
-          <div class="friend__column">
-            <img class="avatar" src="" alt="avatar" />
-            <div class="friend__content">
-              <span class="friend__name">강준호형님</span>
-              <span class="friend__status"></span>
-            </div>
-          </div>
-          <div class="friend__column"></div>
-        </li>
-        <li class="freinds__friend friend">
-          <div class="friend__column">
-            <img class="avatar" src="" alt="avatar" />
-            <div class="friend__content">
-              <span class="friend__name">강환성</span>
-              <span class="friend__status">
-                작은 습관 하나 하나가 모여서 큰 목적을 만든다@
-              </span>
-            </div>
-          </div>
-          <div class="friend__column"></div>
-        </li>
-      </section>
-    </main>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="./friends.html" class="nav_list-link">
-            <i class="far fa-user"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="./index.html" class="nav_list-link">
-            <i class="far fa-comment"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="./news.html" class="nav_list-link">
-            <i class="fas fa-search"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="./more.html" class="nav_list-link">
-            <i class="fas fa-ellipsis-h"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
+      </nav>
+    </div>
   </body>
 </html>
